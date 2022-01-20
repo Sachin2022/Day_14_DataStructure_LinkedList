@@ -10,12 +10,15 @@ public class LinkedListMain {
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter 1 to add the data at the start");
+		System.out.println("Enter 2 to add the data at the end");
 		int value = scanner.nextInt();
 		switch (value) {
 		case 1:
 			Operations.addeElementAtStart();
 			break;
-
+		case 2:
+			Operations.addElementAtEnd();
+			break;
 		}
 	}
 }
