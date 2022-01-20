@@ -11,7 +11,8 @@ public class LinkedListMain {
 		System.out.println("Enter 1 to add the data at the start");
 		System.out.println("Enter 2 to add the data at the end");
 		System.out.println("Enter 3 to insert data at the Middle");
-		switch (scanner.nextInt()) {
+		int value = scanner.nextInt();
+		switch (value) {
 		case 1:
 			Operations.addeElementAtStart();
 			break;
