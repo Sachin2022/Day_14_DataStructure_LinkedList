@@ -1,22 +1,20 @@
 package com.bridgelabz.linkedlist;
 
+import java.util.Scanner;
+
 public class LinkedListMain {
 
 	public static void main(String[] args) {
 
-		System.out.println("Welcome to DataStructure LinkedList Program");
-		Node firstNode = new Node(56);
-		Node secondNode = new Node(30);
-		Node thirdNode = new Node(70);
-		Node head = firstNode;
-		firstNode.next = secondNode;
-		secondNode.next = thirdNode;
-		Node tail = thirdNode;
+		System.out.println("Welcome to linkedList DataStructure Program");
 
-		Node temp = head;
-		while (temp != null) {
-			System.out.println(temp.data);
-			temp = temp.next;
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter 1 to add the data at the start");
+		int value = scanner.nextInt();
+		switch (value) {
+		case 1:
+			Operations.addeElementAtStart();
+
 		}
 	}
 }
