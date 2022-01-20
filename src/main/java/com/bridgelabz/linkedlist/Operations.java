@@ -2,7 +2,7 @@ package com.bridgelabz.linkedlist;
 
 public class Operations {
 
-	public static void addeElementAtStart() {
+	public static LinkedList addeElementAtStart() {
 
 		LinkedList linkedList = new LinkedList();
 		linkedList.push(70);
@@ -10,6 +10,7 @@ public class Operations {
 		linkedList.push(56);
 
 		linkedList.print();
+		return linkedList;
 	}
 
 	public static void addElementAtEnd() {
@@ -20,4 +21,14 @@ public class Operations {
 		linkedList.print();
 	}
 
+	public static void insertInBetween() {
+
+		LinkedList linkedList = new LinkedList();
+		Node secondNode = linkedList.push(70);
+		Node firstNode = linkedList.push(56);
+		Node newNode = new Node(30);
+		linkedList.print();
+		linkedList.insertInBetween(firstNode, newNode);
+		linkedList.print();
+	}
 }
