@@ -14,6 +14,7 @@ public class LinkedListMain {
 		switch (value) {
 		case 1:
 			Operations.addeElementAtStart();
+			break;
 
 		}
 	}
