@@ -14,6 +14,7 @@ public class LinkedListMain {
 		System.out.println("Enter 4 to delete first element");
 		System.out.println("Enter 5 to delete Last element");
 		System.out.println("Enter 6 to find index number and node base on value");
+		System.out.println("Enter 7 to add element at specific node in LinkedList");
 		int value = scanner.nextInt();
 		switch (value) {
 		case 1:
@@ -33,7 +34,10 @@ public class LinkedListMain {
 			break;
 		case 6:
 			Operations.searchNodeBaseOnValue();
-
+			break;
+		case 7:
+			Operations.insertAtGivenNode();
+			break;
 		}
 	}
 }
