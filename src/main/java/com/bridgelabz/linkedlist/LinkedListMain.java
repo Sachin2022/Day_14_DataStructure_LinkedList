@@ -18,7 +18,5 @@ public class LinkedListMain {
 			System.out.println(temp.data);
 			temp = temp.next;
 		}
-
 	}
-
 }
