@@ -12,7 +12,8 @@ public class LinkedListMain {
 		System.out.println("Enter 2 to add the data at the end");
 		System.out.println("Enter 3 to insert data at the Middle");
 		System.out.println("Enter 4 to delete first element");
-		switch (scanner.nextInt()) {
+		int value = scanner.nextInt();
+		switch (value) {
 		case 1:
 			Operations.addeElementAtStart();
 			break;
