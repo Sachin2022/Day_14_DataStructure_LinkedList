@@ -33,6 +33,7 @@ public class LinkedListMain {
 			break;
 		case 6:
 			Operations.searchNodeBaseOnValue();
+			break;
 
 		}
 	}
